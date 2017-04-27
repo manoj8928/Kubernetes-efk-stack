@@ -6,8 +6,11 @@ This repository contains a docker images for a fluentd logshipper, kubernetes co
 To setup the Elasticsearch Cluster and a kibana frontend run:
 
 kubectl create -f elastic-search-rc.yaml
+
 kubectl create -f elasticsearch-svc.yaml
+
 kubectl create -f kibana-rc.yaml
+
 kubectl create -f kibana-svc.yaml
 
 

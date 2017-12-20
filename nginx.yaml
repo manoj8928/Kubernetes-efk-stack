@@ -9,3 +9,4 @@ spec:
   - name: synth-lgr
     image: ubuntu:14.04
     command: ["bash", "-c", "i=\"0\"; while true; do echo -n \"`hostname`: $i: \"; date --rfc-3339 ns; sleep 4; i=$[$i+1]; done"]
+the

@@ -31,3 +31,15 @@ fluentd-logging-mcegp            1/1       Running   0          10s
 kibana-logging-v1-mmfv4          1/1       Running   0          2m
 kube-addon-manager-minikubevm    1/1       Running   0          4m
 kubernetes-dashboard-ms0el       1/1       Running   0          4m
+
+
+ToDo
+- elasticsearch
+  remove persistent storage - we rebuild, if needed
+    looks like already taken care of because of `emptyDir` volume type
+  pick later version (5.2 is out)
+- fluentd
+  support authentication
+    place auth info in secret
+- nginx
+  what the hell is this for?

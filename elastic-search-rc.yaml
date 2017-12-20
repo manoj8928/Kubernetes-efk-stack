@@ -4,7 +4,7 @@ metadata:
   name: elasticsearch-logging
   namespace: kube-system
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     k8s-app: elasticsearch-logging
     version: v1
@@ -32,7 +32,7 @@ spec:
             cpu: 100m
         volumeMounts:
         - mountPath: /data
-          name: es-persistent-storage
+          name: es-ephemeral-storage
       volumes:
       - emptyDir: {}
-        name: es-persistent-storage
+        name: es-ephemeral-storage

@@ -46,3 +46,6 @@ ToDo
     place auth info in secret
 - nginx
   what the hell is this for?
+  # GEORGE MALARY: I say let's delete the nginx yaml.  works without deploying and yaml makes no sense.  probably for debugging of was trying # to add some new functionality.
+
+- Implement log retention and rotation: look int curator add on

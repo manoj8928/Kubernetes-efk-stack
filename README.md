@@ -1,3 +1,6 @@
+#references: https://github.com/kubernetes/examples/tree/master/staging/elasticsearch/production_cluster
+# https://github.com/iAmPlus/eliza-devops/tree/master/infrastructure/staging/elk
+
 Kubernetes Logging into Elasticsearch
 
 This repository contains a docker images for a fluentd logshipper, kubernetes configs to deploy a basic elasticsearch cluster with kibana frontend, and documentation. These files should show how to setup a fluentd logshipper as kubernetes daemonset and pipe all container logs into an elasticsearch cluster. The logs are enriched with Metadata like pod_name, pod_id, docker_id.
@@ -17,7 +20,7 @@ kubectl create -f kibana-svc.yaml
 
 To start the fluentd daemonset run:
 
-kubectl create -f fleuntd-daemonset.yaml
+kubectl create -f fluentd-daemonset.yaml
 
 After this setup you can check the pods you have deployed. The command is:
 
